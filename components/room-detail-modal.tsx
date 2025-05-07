@@ -37,7 +37,7 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailPro
 
   useEffect(() => {
     setMounted(true)
-    // Reset to first image when modal opens
+    
     setActiveImageIndex(0)
   }, [isOpen])
 
@@ -47,18 +47,18 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailPro
 
   const handleBookNow = () => {
     onClose()
-    // Scroll to booking form and pre-select the room type
+    
     const bookingElement = document.getElementById("booking")
     if (bookingElement) {
       bookingElement.scrollIntoView({ behavior: "smooth" })
 
-      // Find the room type select element and set its value
+      
       setTimeout(() => {
         const roomTypeSelect = document.querySelector('[aria-label="Select room type"]') as HTMLElement
         if (roomTypeSelect) {
           roomTypeSelect.click()
 
-          // Find and click the appropriate room type option
+          
           setTimeout(() => {
             const roomOptions = document.querySelectorAll('[role="option"]')
             roomOptions.forEach((option) => {
@@ -85,10 +85,10 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailPro
       <DialogContent className="max-w-5xl p-0 overflow-hidden bg-[#f8f3ea]">
         <DialogTitle className="sr-only">{room.name}</DialogTitle>
         <div className="relative">
-          {/* Removed custom close button to use default Shadcn one */}
+          {}
 
           <div className="grid md:grid-cols-2">
-            {/* Room Image Gallery */}
+            {}
             <div className="relative h-[300px] md:h-auto">
               <Image
                 src={room.galleryImages[activeImageIndex] || "/placeholder.svg"}
@@ -114,7 +114,7 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailPro
                     <ChevronRight className="h-5 w-5 text-[#6d1d2a]" />
                   </button>
 
-                  {/* Image Indicators */}
+                  {}
                   <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
                     {room.galleryImages.map((_, idx) => (
                       <button
@@ -131,7 +131,7 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailPro
               )}
             </div>
 
-            {/* Room Details */}
+            {}
             <div className="p-6 md:p-8">
               <div className="flex items-center justify-between mb-4">
                 <Image src="/logo.png" alt="Chakra Hotel Logo" width={120} height={48} className="h-auto" />

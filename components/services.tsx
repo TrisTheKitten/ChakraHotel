@@ -194,23 +194,23 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Services Cards - Redesigned for better readability and professionalism */}
+        {}
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div
               key={service.id}
               className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px] flex flex-col"
             >
-              {/* Service Image - Ensure this section is correct */}
+              {}
               <div className="relative h-[280px]">
                 <Image
-                  src={service.mainImage || "/placeholder.svg"} // Check if service.mainImage paths are correct
+                  src={service.mainImage || "/placeholder.svg"} 
                   alt={service.title}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                {/* Overlay for hover effect */}
+                {}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <Button
                     variant="outline"
@@ -230,14 +230,14 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Card Content */}
+              {}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <h3 className="text-xl font-serif mb-2" style={{ color: service.color }}>
                   {service.title}
                 </h3>
                 <p className="text-gray-700 mb-4 flex-grow">{service.shortDescription}</p>
 
-                {/* Service Highlights */}
+                {}
                 <div className="flex items-center justify-between text-sm text-gray-600 mb-5 border-t border-b border-gray-100 py-3">
                   <div className="flex items-center">
                     <Clock size={16} className="mr-1" />
@@ -261,14 +261,14 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Service Detail Dialog */}
+        {}
         <Dialog open={!!openDialog} onOpenChange={(open) => !open && setOpenDialog(null)}>
           <DialogContent className="max-w-4xl p-0 bg-white overflow-hidden">
             {dialogServiceData && (
               <>
                 <DialogTitle className="sr-only">{dialogServiceData.title}</DialogTitle>
                 <div className="flex flex-col h-[90vh]">
-                  {/* Header Section */}
+                  {}
                   <div className="relative h-[250px]">
                     <Image
                       src={dialogServiceData.mainImage || "/placeholder.svg"}
@@ -299,17 +299,17 @@ export default function Services() {
                         </Badge>
                       </div>
                     </div>
-                    {/* NOTE: Explicit DialogClose removed here to use the default one */}
+                    {}
                   </div>
 
-                  {/* Tabs Section - Positioned correctly after header */}
+                  {}
                   <Tabs
                     defaultValue="overview"
                     value={activeTab}
                     onValueChange={setActiveTab}
                     className="flex-1 overflow-hidden flex flex-col"
                   >
-                    {/* Tabs List */}
+                    {}
                     <div className="border-b">
                       <TabsList className="h-12 w-full justify-start rounded-none bg-transparent p-0">
                         <TabsTrigger
@@ -339,7 +339,7 @@ export default function Services() {
                       </TabsList>
                     </div>
 
-                    {/* Tabs Content Area */}
+                    {}
                     <div className="overflow-y-auto flex-1 p-6">
                       <TabsContent value="overview" className="mt-0 space-y-6">
                         <div>
@@ -430,7 +430,7 @@ export default function Services() {
                       </TabsContent>
                     </div>
 
-                    {/* Tabs Footer Button */}
+                    {}
                     <div className="p-4 border-t bg-[#F5F0E6]">
                       <Button
                         className="w-full bg-[#6d1d2a] hover:bg-[#a02d3f] text-white py-6"
@@ -450,7 +450,7 @@ export default function Services() {
           </DialogContent>
         </Dialog>
 
-        {/* Nested Dialog for Enlarged Gallery Image */}
+        {}
         <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
           <DialogContent className="max-w-4xl p-0 bg-transparent border-none">
             <DialogTitle className="sr-only">Enlarged Service Gallery Image</DialogTitle>
