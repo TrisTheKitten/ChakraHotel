@@ -11,7 +11,7 @@ export default function Testimonials() {
       id: 1,
       name: "Sarah Johnson",
       location: "United States",
-      image: "https:
+      image: "https://picsum.photos/seed/sarahjohnson/128/128",
       rating: 5,
       text: "Chakra Hotel provided the perfect blend of traditional Thai culture and modern comfort. The herbal massage was the highlight of my stay - absolutely rejuvenating!",
     },
@@ -19,7 +19,7 @@ export default function Testimonials() {
       id: 2,
       name: "David Chen",
       location: "Singapore",
-      image: "https:
+      image: "https://picsum.photos/seed/davidchen/128/128",
       rating: 5,
       text: "The attention to detail in the Thai décor and the warmth of the staff made our stay memorable. The food workshop gave us insights into authentic Thai cuisine.",
     },
@@ -27,7 +27,7 @@ export default function Testimonials() {
       id: 3,
       name: "Emma Wilson",
       location: "Australia",
-      image: "https:
+      image: "https://picsum.photos/seed/emmawilson/128/128",
       rating: 4,
       text: "A beautiful boutique hotel with a strong sense of Thai heritage. The rooms are comfortable and the staff went above and beyond to make our stay special.",
     },
@@ -65,7 +65,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {}
+        {/* Mobile Testimonial Carousel */}
         <div className="md:hidden relative h-[400px]">
           <AnimatePresence mode="wait">
             <motion.div
@@ -121,7 +121,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {}
+        {/* Desktop Testimonial Grid */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-lg">

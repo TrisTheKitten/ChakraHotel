@@ -102,7 +102,7 @@ export default function Rooms() {
           </p>
         </div>
 
-        {}
+        {/* Mobile View - Carousel */}
         <div className="md:hidden relative">
           <div className="overflow-hidden rounded-lg">
             <AnimatePresence mode="wait">
@@ -210,23 +210,23 @@ export default function Rooms() {
           </div>
         </div>
 
-        {}
+        {/* Desktop View - Grid */}
         <div className="hidden md:grid md:grid-cols-3 gap-8">
           {rooms.map((room) => (
             <div
               key={room.id}
               className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105"
             >
-              {}
+              {/* Room Card Image - Ensure this section is correct */}
               <div className="relative h-48 group cursor-pointer" onClick={() => openRoomDetail(room.id)}>
                 <Image
-                  src={room.image || "/placeholder.svg"} 
+                  src={room.image || "/placeholder.svg"} // Check if room.image paths are correct
                   alt={room.name}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Added sizes for better optimization
                 />
-                {}
+                {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
                   <Button
                     variant="outline"
@@ -237,7 +237,7 @@ export default function Rooms() {
                   </Button>
                 </div>
               </div>
-              {}
+              {/* Room Card Content */}
               <div className="p-6">
                 <div className="flex justify-between items-center mb-3">
                   <h3 className="text-xl font-serif text-[#6d1d2a]">{room.name}</h3>
@@ -294,7 +294,7 @@ export default function Rooms() {
         </div>
       </div>
 
-      {}
+      {/* Room Detail Modal */}
       {selectedRoom !== null && (
         <RoomDetailModal
           isOpen={selectedRoom !== null}

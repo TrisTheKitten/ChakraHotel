@@ -36,24 +36,24 @@ export default function ServiceDetailModal({ isOpen, onClose, service }: Service
 
   const handleBookNow = () => {
     onClose()
-    
+    // Scroll to booking form and pre-select the service type
     const bookingElement = document.getElementById("booking")
     if (bookingElement) {
       bookingElement.scrollIntoView({ behavior: "smooth" })
 
-      
+      // Switch to service booking tab
       setTimeout(() => {
         const serviceTab = document.querySelector('[value="service"]') as HTMLElement
         if (serviceTab) {
           serviceTab.click()
 
-          
+          // Find the service type select element and set its value
           setTimeout(() => {
             const serviceTypeSelect = document.querySelector('[aria-label="Select service type"]') as HTMLElement
             if (serviceTypeSelect) {
               serviceTypeSelect.click()
 
-              
+              // Find and click the appropriate service type option
               setTimeout(() => {
                 const serviceOptions = document.querySelectorAll('[role="option"]')
                 serviceOptions.forEach((option) => {
@@ -83,7 +83,7 @@ export default function ServiceDetailModal({ isOpen, onClose, service }: Service
           </button>
 
           <div className="grid md:grid-cols-2">
-            {}
+            {/* Service Image */}
             <div className="relative h-[300px] md:h-auto">
               <Image
                 src={service.detailImage || "/placeholder.svg"}
@@ -98,7 +98,7 @@ export default function ServiceDetailModal({ isOpen, onClose, service }: Service
               </div>
             </div>
 
-            {}
+            {/* Service Details */}
             <div className="p-6 md:p-8">
               <div className="flex items-center justify-between mb-6">
                 <Image src="/logo.png" alt="Chakra Hotel Logo" width={120} height={48} className="h-auto" />
