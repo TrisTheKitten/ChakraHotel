@@ -8,7 +8,6 @@ import Rooms from "@/components/rooms"
 import Services from "@/components/services"
 import FoodMenu from '@/components/food-menu';
 import Amenities from "@/components/amenities"
-import Testimonials from "@/components/testimonials"
 import Location from "@/components/location"
 import Gallery from "@/components/gallery"
 import Footer from "@/components/footer"
@@ -34,7 +33,6 @@ export default function Home() {
       <FoodMenu />
       <Amenities />
       <Gallery />
-      <Testimonials />
       <Location />
       <section className="py-16 bg-[#F5F0E6]">
         <div className="container mx-auto px-4 text-center">

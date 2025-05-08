@@ -129,8 +129,8 @@ export default function Services() {
         "Learn to prepare authentic Thai dishes like Som Tum (papaya salad) in our weekly cooking classes",
       fullDescription:
         "Discover the secrets of Thai cuisine in our interactive cooking workshops held weekly. Our expert chefs will guide you through preparing authentic Thai dishes like the popular Som Tum (papaya salad) using traditional techniques and fresh, local ingredients. Learn about the essential herbs and spices that give Thai food its distinctive flavors, and enjoy the fruits of your labor in a communal meal at the end of the class.",
-      mainImage: "/food-workshop-area-1.jpg",
-      detailImages: ["/food-workshop-area-1.jpg", "/food-workshop-area-2.jpg"],
+      mainImage: "/food workshop preview.jpg",
+      detailImages: ["/food-workshop-area-1.jpg", "/food-workshop-area-2.jpg", "/food workshop preview.jpg"],
       price: "1,800 ฿",
       duration: "3 hours",
       rating: 4.9,

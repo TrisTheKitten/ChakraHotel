@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { ImageSwiper } from '@/components/ui/image-swiper';
 
 const thaiDishes = [
   {
@@ -21,6 +22,13 @@ const fusionDishes = [
     name: 'Pan-Seared Salmon',
     description: 'Crispy-skin salmon fillet served with roasted asparagus, quinoa, and a zesty lemon-dill sauce.',
   },
+];
+
+const restaurantImages = [
+  '/restaurant-area-1.jpg',
+  '/restaurant-area-2.jpg',
+  '/restaurant-area-3.jpg',
+  '/restaurant 4.jpg'
 ];
 
 const FoodMenu = () => {
@@ -73,14 +81,13 @@ const FoodMenu = () => {
                 ))}
               </ul>
             </div>
-            <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/restaurant-area-1.jpg"
-                alt="Elegant dining area at Chakra Hotel"
-                layout="fill"
-                objectFit="cover"
-                className="transform hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
+            {/* "Restaurant" title - positioned as a heading */}
+            <div>
+              <h3 className="text-center text-3xl font-serif text-[#6d1d2a]">Restaurant</h3>
+            </div>
+            {/* ImageSwiper container */}
+            <div className="h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <ImageSwiper images={restaurantImages} className="h-full w-full" />
             </div>
           </div>
         </div>
