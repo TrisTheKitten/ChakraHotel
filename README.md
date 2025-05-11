@@ -51,6 +51,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 *   [shadcn/ui](https://ui.shadcn.com/)
 *   [Framer Motion](https://www.framer.com/motion/) (Likely used for animations)
 
-## Codebase Structure
-
-See `codebase_structure.md` for a detailed breakdown of the project files and directories.
