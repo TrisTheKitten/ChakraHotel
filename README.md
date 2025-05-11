@@ -1,4 +1,5 @@
-# Chakra Hotel Booking Website : https://chakra-hotel.vercel.app/
+# Chakra Hotel Booking Website 
+: https://chakra-hotel.vercel.app/
 
 This is a modern hotel booking website built with Next.js, TypeScript, and shadcn/ui for the user interface components, styled with Tailwind CSS.
 
