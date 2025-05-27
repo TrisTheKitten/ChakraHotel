@@ -50,5 +50,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 *   [TypeScript](https://www.typescriptlang.org/)
 *   [Tailwind CSS](https://tailwindcss.com/)
 *   [shadcn/ui](https://ui.shadcn.com/)
-*   [Framer Motion](https://www.framer.com/motion/) (Likely used for animations)
+*   [Framer Motion](https://www.framer.com/motion/) 
 
